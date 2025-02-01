@@ -20,6 +20,7 @@ const AnnouncementBar = () => {
 
 type HeaderProps = {
     user: Omit<User, 'passwordHash'> | null;
+    categorySelector: React.ReactNode;
 }
 
 
@@ -73,6 +74,7 @@ export const Header = ({ user, categorySelector }: HeaderProps) => {
                                    <nav className='hidden md:flex gap-4 lg:gap-6 text-sm font-medium'>
                                            <Link href={'#'}>Shop</Link>
                                            <Link href={'#'}>New Arrivals</Link>
+                                           {categorySelector}
                                            <Link href={'#'}>Sale</Link>
                                            <Link href={'#'}>Black Friday</Link>
                                            <Link href={'#'}>Discount</Link>
