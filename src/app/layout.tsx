@@ -4,7 +4,8 @@ import "./globals.css";
 import { Header } from "../components/layout/Header";
 import { getCurrentSession } from "@/actions/auth";
 import { SanityLive } from "@/sanity/lib/live";
-import { HeaderCategorySelector } from "@/components/layout/HeaderCategorySelector";
+import HeaderCategorySelector from "@/components/layout/HeaderCategorySelector";
+
 
 const inter = Inter({ subsets : ["latin"]})
 
