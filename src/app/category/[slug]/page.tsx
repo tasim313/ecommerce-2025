@@ -29,9 +29,23 @@ const Categorypage = async({params}: CategoryPageProps) =>{
                     <span className='text-yellow-600'>🚚</span>
                     <span>Free Shipping</span>
                 </div>
+                <div className='flex items-center gap-2'>
+                    <span className='text-yellow-600'>⭐️</span>
+                    <span>Top Rated</span>
+                </div>
+                <div className='flex items-center gap-2'>
+                    <span className='text-yellow-600'>💰</span>
+                    <span>Best Prices</span>
+                </div>
              </div>
         </div>
-        <section></section>
+        <section className='container mx-auto py-8'>
+                <div className='text-center mb-8'>
+                    <p className='text-sm text-gray-500'>🎉 {products.length} Amazing Deals Available Now!</p>
+                </div>
+
+                <ProductGrid products={products} />
+          </section>
     </div>
   )
 }
